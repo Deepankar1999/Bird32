@@ -1,0 +1,13 @@
+<ul>
+  <% @tweets.each do |tweet| %>
+    <li>
+      <%= tweet.body %>
+      <small><%= tweet.created_at %></small>
+      <%= link_to 'X', tweet_path(tweet), method: :delete, class: "btn" %>
+    </li>
+      <% tweet.tags.each do |tag| %>
+        <%= link_to "#{tag.name}", tag_path(tag) %>
+      <% end %>
+    <hr>
+  <% end %>
+</ul>
