@@ -1,7 +1,7 @@
 class TagsController < ApplicationController
 
   def index
-    @tags = Tag.where(params[:id])
+    @tags = Tag.all
   end
 
   def show
