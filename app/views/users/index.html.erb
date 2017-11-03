@@ -1,0 +1,16 @@
+<h1 class="jumbotron">Users</h1>
+
+<div class="container">
+
+  <div class="card my-2 p-3">
+    <ul>
+      <% @users.each do |user| %>
+        <li>
+          <%= link_to "#{user.username}", user_path(user) %>
+        </li>
+        <hr>
+      <% end %>
+    </ul>
+  </div>
+
+</div>
