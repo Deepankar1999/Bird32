@@ -10,7 +10,8 @@ class TweetsController < ApplicationController
   end
 
   def create
-    @tweet = Tweet.new(tweet_params)
+    # Add tweet to current user
+    @tweet = current_user.tweets.new(tweet_params)
     @tweet.save
 
     # Extracting Hashtags
