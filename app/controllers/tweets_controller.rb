@@ -1,5 +1,7 @@
 class TweetsController < ApplicationController
 
+  before_action :authenticate_user!
+
   def index
     # For New Tweet Form
     @tweet = Tweet.new

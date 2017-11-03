@@ -1,0 +1,23 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light bottom-shadow">
+  <b><%= link_to 'Tweeter', tweets_path, class: "navbar-brand" %></b>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to 'Home', tweets_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Hashtags', tags_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "nav-link" %>
+      </li>
+    </ul>
+
+    <span class="navbar-text">
+      Welcome, @<%= current_user.username %>!
+    </span>
+  </div>
+</nav>
