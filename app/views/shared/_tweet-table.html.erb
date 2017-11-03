@@ -1,7 +1,7 @@
 <ul>
   <% @tweets.each do |tweet| %>
     <li>
-      @<%= tweet.user.username %>
+      <%= link_to "@#{tweet.user.username}", user_path(tweet.user) %>
       <%= tweet.body %>
       <small><%= tweet.created_at %></small>
       <%= link_to 'X', tweet_path(tweet), method: :delete, class: "btn" if current_user == tweet.user %>
