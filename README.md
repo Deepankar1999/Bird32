@@ -4,7 +4,7 @@ This Twitter clone app enables a user to 1) sign up for an account, 2) login, 3)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. You can follow this guide to build it from scratch: https://medium.com/@kennethteh90/how-to-build-a-twitter-clone-885dd3fea6f3
 
 ### Prerequisites
 
